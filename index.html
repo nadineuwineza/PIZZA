@@ -7,75 +7,129 @@
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="bootstrap.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <title>BEST PIZZA</title>
+        <title>PIZZA</title>
     </head>
-    <img src="images/image1.jpg" alt="">
-</div class ="picture">
-<img src="images/image1.jpg" alt="">
+    
     <body>
-   
+     
         <div class="header">
             <h1>YOUR SWEETEST PIZZA</h1>
         </div>
-        <div class="top">
-            <div class="budget">
-                <div class="budget__title">
-                    Your total bill is <span class="budget__title--month">%total%</span>:
+        <div class="container-fluid bg2 text-center">
+            <p><img src="images/image1.jpg" alt="">
+            <a class="btn btn-light" href="#order-area" role="button">Order now</a>
+          </div>
+         
+          <div id="order-area" class="container-fluid bg2 padding">
+            <div class="container bg-form box">
+              <form id="order-form">
+                <div class="form-group row">
+                  <label for="pizza-number" class="col-2 col-form-label">number of pizza</label>
+                  <div class="col-10">
+                    <input class="form-control" type="number" value="1" id="pizza-number">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="pizza-size">Choose pizza size</label>
+                  <select class="form-control" id="pizza-size" required>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2">Crust</label>
+                  <select class="form-control crust" id="pizza-crust" required>
+                      <option selected></option>
+                      <option>Crispy</option>
+                      <option>Stuffed</option>
+                      <option>Gluten-free</option>
+                  </select>
+              </div>
+              <div id="add-toppings">
+                <h1>Add toppings you want</h1>
+              </div>
+                <div id="toppings" class="form-group row">
+                  <div class="col-md-6">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="Bacon and Pineapple" id="top1" value="" >
+                      <label class="form-check-label" for="top1">
+                        Bacon and Pineapple
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="Chicken and Barbeque Sauce" id="top2" value="">
+                      <label class="form-check-label" for="top2">
+                        Chicken and Barbeque Sauce
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="Pineapple and Black Olive" id="top3" value="" >
+                      <label class="form-check-label" for="top3">
+                        Pineapple and Black Olive
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="Sausage" id="top4" value="">
+                      <label class="form-check-label" for="top4">
+                        Sausage
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="capsicum" id="top5" value="" >
+                      <label class="form-check-label" for="top5">
+                        capsicum
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="textareaadditionalinfo">Additional informations</label>
+                  <textarea class="form-control" id="textareaadditionalinfo" rows="3"></textarea>
+                </div>
+                <div class="form-group row">
+                <div id="deli-show" class="form-check col-md-2">
+                  <input class="form-check-input" type="checkbox" name="deliver" id="check-deliver" value="">
+                  <label class="form-check-label" for="check-deliver">
+                    Deliver
+                  </label>
+                </div>
+                <div id="deliver-hide" class="col-md-10" style="display: none;">
+                  <div class="form-group row">
+                    <label class="form-check-label" for="deliver-check">
+                      delivery for 5$
+                    </label>
+                    <div class="col-md-10">
+                      <input type="text" class="form-control mb-2 mr-sm-2" id="village" placeholder="Enter adress with your village">
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <button type="submit" class="btn btn-dark">Order</button>
+                <button type="reset" class="btn btn-dark">Clear</button>
                 
-                <div class="budget__income clearfix">
-                    <div class="budget__income--text">SMALL </div>
-                    <div class="right">
-                      $3
-                    </div>
-                </div>
-                
-                <div class="budget__income clearfix">
-                    <div class="budget__income--text">MEDIUM </div>
-                    <div class="right">
-                     $5
-                    </div>
-                </div>
-                <div class="budget__income clearfix">
-                    <div class="budget__income--text">LARGE</div>
-                    <div class="right">
-                    $7
-                    </div>
-                </div>
-                </div>
+              <ul id="order">
+        
+              </ul>
+              <p><span id="total"> </span></p>
             </div>
-        </div>
-    </div>
-        <br>
-        <br>
-            <div class="add">
-                <div class="add__container">
-                    <select class="add__type">
-                        
-                        <option value="small" >small</option>
-                        <option value="medium" >medium</option>
-                        <option value="large" selected>large</option>
-                    </select>
-                    <input type="number" class="add__value" placeholder="Quantity">
-                    <br>
-                    <select class="add__type">
-                        
-                        <option value="Crispy"selected >Crispy</option>
-                        <option value="Stuffed" >Stuffed</option>
-                        <option value="Gluten-free"> Gluten-free</option>
-                    </select>
-                    <input type="number" class="add__value" placeholder="Quantity">
-                    <div>
-                        <br>
-                        <span>I want topping on my pizza.</span>
-                        <input type="checkbox"></div>
-                    
-                    <br>
-                    
-                           
-                  <div> <button  style="width: 150px;" class="btn btn-danger">checkout</button></div>
-                   
+          </div>
+          <div id="contact" class="container-fluid padding bg3">
+            <h2>CONTACT US</h2>
+            <form id="feedback">
+              <div class="form-row">
+                <div class="col-4">
+                  <input type="text" id="name" class="form-control" placeholder="Name..........">
                 </div>
-        </div>
+                <div class="col-4">
+                  <input type="text" id="mail" class="form-control" placeholder="E-mail........">
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="message" placeholder="Enter your message here..." id="exampleFormControlTextarea1" rows="7" required></textarea>
+              </div>
+            </form>
+          </div>
     
         <script src="js/index.js"></script>
     </body>
