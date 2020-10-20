@@ -13,7 +13,7 @@ html,
 java script,
 css,
 bootstrap,
-jquery
+jquery.
 
  # Installations needed
  visual studio code
