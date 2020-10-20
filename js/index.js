@@ -41,7 +41,7 @@ alert("your order will be delivered to your location");
         }else if(crust=='Stuffed'){
           crustPrice=3;
         }else if(crust=='Gluten-free'){
-          crustPrice=5;
+          crustPrice=6;
         }
         if(size=='Small'){
               sizePrice=2;
