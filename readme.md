@@ -1,6 +1,6 @@
 # Your sweetest pizza
 
-done by UWINEZA NADINE
+Done by UWINEZA NADINE
 email:nadineuwineza2017@gmail.com
 https://nadineuwineza.github.io/PIZZA/.
 
