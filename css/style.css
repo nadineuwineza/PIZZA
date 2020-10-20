@@ -1,125 +1,29 @@
-.mypizza{
-    background-image: url("../images/image1.jpg");
-    height: 550px;
+
+ .header{
+     text-align: center;
+     color: rgb(49, 22, 2);
+ }
+ .cont{
+     color:white;
+ }
+  .three{
+    background-image: url('../images/image1.jpg');
+    height:auto;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
-}
-
-.header{
-    color: chocolate;
-    text-align: center;
-}
-
-.top {
-    height: 30vh;
-    background-size:cover;
-    background-position: center;
-    position: relative;
-}
-
-.pizza {
-    position: absolute;
-    width: 350px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-}
-
-.pizza__title {
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: 300;
-}
-
-.pizza__value {
-    font-weight: 300;
-    font-size: 46px;
-    text-align: center;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-}
-
-.size,
-.pizza__expenses {
-    padding: 12px;
-    text-transform: uppercase;
-}
-
-.size {
-    margin-bottom: 10px;
-    background-color:rgb(41, 26, 14);
-}
-
-.size--text,
-.pizza__expenses--text {
-    float: left;
-    font-size: 13px;
+  }
+  #contact .form-control{
+    background: transparent;
+  }
+  #contact .form-row ::placeholder {
     color:white;
-    margin-top: 2px;
-}
+  }
+  #contact .form-group ::placeholder {
+    color:white;
+  }
 
-.size--value,
-.pizza__expenses--value {
-    letter-spacing: 1px;
-    float: left;
-}
-
-.add {
-    padding: 14px;
-    border-bottom: 1px solid #e7e7e7;
-    background-color: #f7f7f7;
-}
-
-.add__container {
-    margin: 0 auto;
-    text-align: center;
-}
-.right { 
-    float: right; }
-.add__type {
-    width: 355px;
-    border: 1px solid #e7e7e7;
-    height: 44px;
-    font-size: 18px;
-    color: inherit;
-    background-color: #fff;
-    margin-right: 10px;
-    font-weight: 300;
-    transition: border 0.3s;
-}
-.picture{
-    background-image: url("images/image1.jpg");
-    width: 200px;
-}
-
-.add__description,
-.add__value {
-    border: 1px solid #e7e7e7;
-    background-color: #fff;
-    color: inherit;
-    font-size: 14px;
-    padding: 12px 15px;
-    margin-right: 10px;
-    border-radius: 5px;
-    transition: border 0.3s;
-}
-
-
-.add__btn {
-    font-size: 35px;
-    background: none;
-    border: none;
-    color: chocolate;
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1.1;
-    margin-left: 10px;
-}
 
 
 

@@ -15,12 +15,7 @@
         <div class="header">
             <h1>YOUR SWEETEST PIZZA</h1>
         </div>
-        <div class="container-fluid bg2 text-center">
-            <p><img src="images/image1.jpg" alt="">
-            <a class="btn btn-light" href="#order-area" role="button">Order now</a>
-          </div>
-         
-          <div id="order-area" class="container-fluid bg2 padding">
+          <div id="order-area" class="container-fluid two padding">
             <div class="container bg-form box">
               <form id="order-form">
                 <div class="form-group row">
@@ -47,7 +42,7 @@
                   </select>
               </div>
               <div id="add-toppings">
-                <h1>Add toppings you want</h1>
+                <h1>selecttoppings you want</h1>
               </div>
                 <div id="toppings" class="form-group row">
                   <div class="col-md-6">
@@ -83,6 +78,7 @@
                     </div>
                   </div>
                 </div>
+                
                 <div class="form-group">
                   <label for="textareaadditionalinfo">Additional informations</label>
                   <textarea class="form-control" id="textareaadditionalinfo" rows="3"></textarea>
@@ -105,17 +101,20 @@
                   </div>
                 </div>
                 </div>
-                <button type="submit" class="btn btn-dark">Order</button>
-                <button type="reset" class="btn btn-dark">Clear</button>
-                
-              <ul id="order">
-        
-              </ul>
-              <p><span id="total"> </span></p>
+                <button type="submit"id="order-button" class="btn btn-dark">Order </button>
+                <button type="button" class="btn btn-dark">Clear</button>
+                <button type="" class="btn btn-dark" onclick="reload()">click when Done</button>
+              </form>
+                <ul id="orders">
+
+                </ul>
+              <p>total<span id="total"total></span></p>
             </div>
           </div>
-          <div id="contact" class="container-fluid padding bg3">
-            <h2>CONTACT US</h2>
+          <div id="contact" class="container-fluid padding three">
+            <div class="cont">
+              <h2>CONTACT US</h2>
+            </div>
             <form id="feedback">
               <div class="form-row">
                 <div class="col-4">
@@ -128,6 +127,8 @@
               <div class="form-group">
                 <textarea class="form-control" id="message" placeholder="Enter your message here..." id="exampleFormControlTextarea1" rows="7" required></textarea>
               </div>
+              <br>
+              <button type="submit" class="btn btn-dark"onclick="submit">submit</button>
             </form>
           </div>
     
