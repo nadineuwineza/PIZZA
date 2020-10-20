@@ -14,4 +14,10 @@ bootstrap
 jquery
 
  INSTALLATION NEEDED
+ visual studio code
+
+ LICENCE
+ MIT licence
+ copyright(c) 2020 Uwineza Nadine
+
  
