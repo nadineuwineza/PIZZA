@@ -1,22 +1,23 @@
-YOUR SWEETEST PIZZA
+# YOUR SWEETEST PIZZA
 
 done by UWINEZA NADINE
 email:nadineuwineza2017@gmail.com
 
-PROJECT DESCRIPTION
+# PROJECT DESCRIPTION
 This project is about Pizza shopping where by a customer can order different types of pizzas,by choosing the size ,crust , toppings she/he want  whith different number of pizzas he/she want.
+https://github.com/nadineuwineza/PIZZA
 
-TECHNOLOGIES USED
-html
-java script
-css
-bootstrap
+# TECHNOLOGIES USED
+html,
+java script,
+css,
+bootstrap,
 jquery
 
- INSTALLATION NEEDED
+ # INSTALLATION NEEDED
  visual studio code
 
- LICENCE
+# LICENCE
 
  MIT licence
  copyright(c) 2020 Uwineza Nadine
